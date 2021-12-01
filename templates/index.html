@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>{{title}}- My order</title>
+
+    </head>
+    <body>
+        <h1>My Order</h1>
+        <h2> First Order</h2>
+
+        {% for order in orders %}
+        <div>
+            <h3>{{order.name}}</h3>
+            <p>{{order.title}} <br> {{order.date}}</br>
+                {{order.quantity}}
+            
+
+            </p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
