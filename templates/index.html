@@ -12,10 +12,12 @@
             <h3>{{order.name}}</h3>
             <p>{{order.title}} <br> {{order.date}}</br>
                 {{order.quantity}}
-            
-
             </p>
+            <a href="/orders/{{orders.index(order)}}"> view more</a>
+            
         </div>
+        
         {% endfor %}
+       
     </body>
 </html>
